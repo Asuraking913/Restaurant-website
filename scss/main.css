@@ -1,1 +1,77 @@
-/*# sourceMappingURL=main.css.map */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: "icon1";
+  src: url("../fontawesome/fontawesome-free-6.5.1-web/webfonts/fa-solid-900.woff2");
+  font-family: "roboto";
+}
+:root {
+  --color: white;
+}
+
+body {
+  background-color: var(--color);
+  position: relative;
+}
+
+.nav-cont1 {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  background-color: transparent;
+  display: flex;
+  justify-content: center;
+  padding: 1.5em;
+}
+.nav-cont1 .nav-cont2 {
+  display: flex;
+  align-items: center;
+  place-content: space-between;
+  width: 100%;
+}
+.nav-cont1 .nav-cont2 a {
+  text-decoration: none;
+  font-weight: bold;
+  color: var(--color);
+  font-size: 1.2rem;
+}
+.nav-cont1 .nav-cont2 i {
+  font-size: 1.5rem;
+  color: var(--color);
+  cursor: pointer;
+  font-family: "icon1";
+}
+.nav-cont1 .nav-cont2 nav {
+  display: none;
+}
+
+section.land-sect {
+  height: 100vh;
+  background-image: url(../images/Restaurant\ aesthetic.jpeg);
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+section.land-sect .cont {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  gap: 2em;
+}
+section.land-sect .cont h1 {
+  color: white;
+  font-family: sans-serif;
+  font-size: 1.8rem;
+  text-transform: capitalize;
+}
+section.land-sect .cont p {
+  color: white;
+  font-size: 1.2em;
+}/*# sourceMappingURL=main.css.map */
