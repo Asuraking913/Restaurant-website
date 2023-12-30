@@ -5,16 +5,19 @@
 }
 
 @font-face {
-  font-family: "icon1";
-  src: url("../fontawesome/fontawesome-free-6.5.1-web/webfonts/fa-solid-900.woff2");
   font-family: "roboto";
+  src: url("../font/Roboto/Roboto-Regular.ttf");
+  font-family: "poppins";
+  src: url("../font/Poppins/Poppins-Regular.ttf");
 }
 :root {
   --color: white;
+  --ac: rgb(218, 169, 106);
+  --bg: #333030;
 }
 
 body {
-  background-color: var(--color);
+  background-color: var(--bg);
   position: relative;
 }
 
@@ -43,7 +46,6 @@ body {
   font-size: 1.5rem;
   color: var(--color);
   cursor: pointer;
-  font-family: "icon1";
 }
 .nav-cont1 .nav-cont2 nav {
   display: none;
@@ -58,6 +60,7 @@ section.land-sect {
   justify-content: center;
   align-items: center;
   text-align: center;
+  padding: 1em;
 }
 section.land-sect .cont {
   width: 80%;
@@ -73,5 +76,27 @@ section.land-sect .cont h1 {
 }
 section.land-sect .cont p {
   color: white;
+  font-size: 1.1em;
+  font-family: "roboto";
+  line-height: 1em;
+  font-style: italic;
+}
+section.land-sect .cont a {
+  margin-top: 2em;
+  padding: 1em;
+  color: rgb(22, 22, 22);
+  text-decoration: none;
   font-size: 1.2em;
+  font-family: "poppins";
+  font-weight: bold;
+  background-color: var(--ac);
+  border-radius: 0.8em;
+}
+section.land-sect .cont a:hover {
+  background-color: rgb(209, 178, 137);
+}
+
+section.hero-sect figure img {
+  -o-object-fit: cover;
+     object-fit: cover;
 }/*# sourceMappingURL=main.css.map */

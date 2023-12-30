@@ -5,18 +5,21 @@
 }
 
 @font-face {
-  font-family: "icon1";
-  src: url("../fontawesome/fontawesome-free-6.5.1-web/webfonts/fa-solid-900.woff2");
-
   font-family: "roboto";
+  src: url("../font/Roboto/Roboto-Regular.ttf");
+
+  font-family: "poppins";
+  src: url("../font/Poppins/Poppins-Regular.ttf");
 }
 
 :root {
   --color: white;
+  --ac: rgb(218, 169, 106);
+  --bg: #333030;
 }
 
 body {
-  background-color: var(--color);
+  background-color: var(--bg);
   position: relative;
 }
 
@@ -47,7 +50,6 @@ body {
       font-size: 1.5rem;
       color: var(--color);
       cursor: pointer;
-      font-family: "icon1";
     }
 
     nav {
@@ -65,6 +67,7 @@ section.land-sect {
   justify-content: center;
   align-items: center;
   text-align: center;
+  padding: 1em;
 
   .cont {
     width: 80%;
@@ -81,8 +84,34 @@ section.land-sect {
 
     p {
       color: white;
+      font-size: 1.1em;
+      font-family: "roboto";
+      line-height: 1em;
+      font-style: italic;
+    }
+
+    a {
+      margin-top: 2em;
+      padding: 1em;
+      color: rgb(22, 22, 22);
+      text-decoration: none;
       font-size: 1.2em;
-      //   font-family: ;
+      font-family: "poppins";
+      font-weight: bold;
+      background-color: var(--ac);
+      border-radius: 0.8em;
+
+      &:hover {
+        background-color: rgb(209, 178, 137);
+      }
+    }
+  }
+}
+
+section.hero-sect {
+  figure {
+    img {
+      object-fit: cover;
     }
   }
 }
