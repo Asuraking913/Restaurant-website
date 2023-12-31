@@ -19,6 +19,7 @@
 body {
   background-color: var(--bg);
   position: relative;
+  min-height: 100vh;
 }
 
 html {
