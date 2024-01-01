@@ -176,7 +176,6 @@ article.big-cont .today-spec {
   align-items: center;
   justify-content: center;
   text-transform: capitalize;
-  min-height: 100vh;
 }
 article.big-cont .today-spec h1,
 article.big-cont .today-spec h3 {
@@ -222,6 +221,9 @@ article.big-cont .today-spec .swiper .swiper-slide .text-cont .star {
   display: flex;
   place-content: space-between;
 }
+article.big-cont .today-spec .swiper .swiper-slide .text-cont .star i {
+  color: rgb(218, 169, 106);
+}
 article.big-cont .today-spec .swiper .swiper-slide .text-cont .star a {
   display: inline;
   border-bottom: 2px solid rgb(218, 169, 106);
@@ -258,15 +260,34 @@ section.discover {
   display: block;
   color: white;
   text-align: center;
-  height: 50vh;
+  padding: 5em 2em;
 }
 section.discover .cont1 {
   display: flex;
   align-items: center;
   flex-direction: column;
+  gap: 1.5em;
+}
+section.discover .cont1 h1 {
+  font-size: 1.5rem;
+  font-family: "poppins";
 }
 section.discover .cont1 p {
-  word-break: 15ch;
+  font-family: "mon";
+}
+section.discover .cont1 a {
+  padding: 1em 2em;
+  color: rgb(22, 22, 22);
+  text-decoration: none;
+  font-size: 1.2em;
+  font-family: "poppins";
+  font-weight: bold;
+  background-color: var(--ac);
+  border-radius: 0.8em;
+  margin-top: 0.5em;
+}
+section.discover .cont1 a:hover {
+  background-color: rgb(209, 178, 137);
 }
 section.discover h1 {
   font-size: 2rem;

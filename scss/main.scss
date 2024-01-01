@@ -10,6 +10,9 @@
 
   font-family: "poppins";
   src: url("../font/Poppins/Poppins-Regular.ttf");
+
+  // font-family: "mon";
+  // src: url("../font/Montserrat/Montserrat-Regular.ttf");
 }
 
 :root {
@@ -197,7 +200,7 @@ article.big-cont {
     align-items: center;
     justify-content: center;
     text-transform: capitalize;
-    min-height: 100vh;
+    // min-height: 100vh;
 
     h1,
     h3 {
@@ -249,6 +252,10 @@ article.big-cont {
             display: flex;
             place-content: space-between;
 
+            i {
+              color: rgb(218, 169, 106);
+            }
+
             a {
               display: inline;
               border-bottom: 2px solid rgb(218, 169, 106);
@@ -297,15 +304,37 @@ section.discover {
   display: block;
   color: white;
   text-align: center;
-  height: 50vh;
+  padding: 5em 2em;
 
   .cont1 {
     display: flex;
     align-items: center;
     flex-direction: column;
+    gap: 1.5em;
+
+    h1 {
+      font-size: 1.5rem;
+      font-family: "poppins";
+    }
 
     p {
-      word-break: 15ch;
+      font-family: "mon";
+    }
+
+    a {
+      padding: 1em 2em;
+      color: rgb(22, 22, 22);
+      text-decoration: none;
+      font-size: 1.2em;
+      font-family: "poppins";
+      font-weight: bold;
+      background-color: var(--ac);
+      border-radius: 0.8em;
+      margin-top: 0.5em;
+
+      &:hover {
+        background-color: rgb(209, 178, 137);
+      }
     }
   }
 
