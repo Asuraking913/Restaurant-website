@@ -168,11 +168,12 @@ article.big-cont section.hero-sect .story p:last-child {
 }
 article.big-cont .today-spec {
   color: white;
-  height: 100vh;
-  position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
+  text-transform: capitalize;
+  min-height: 100vh;
 }
 article.big-cont .today-spec h1,
 article.big-cont .today-spec h3 {
@@ -188,133 +189,64 @@ article.big-cont .today-spec h1 {
 article.big-cont .today-spec h3 {
   font-size: 1rem;
   font-weight: normal;
+  margin-bottom: 2em;
 }
 article.big-cont .today-spec h3 span {
-  display: block;
   font-size: 1rem;
 }
-article.big-cont .today-spec ul {
-  margin-top: 2em;
-  list-style-type: none;
-  width: 100%;
-  display: flex;
-  justify-content: center;
+article.big-cont .today-spec .swiper {
+  width: 70%;
 }
-article.big-cont .today-spec ul .list-cont1 {
-  display: flex;
-  overflow: hidden;
-  width: 80%;
-  gap: 1em;
-}
-article.big-cont .today-spec ul li {
-  background-color: #555252;
-  border-radius: 0.5em;
-  width: 250px;
-}
-article.big-cont .today-spec ul li img {
-  border-radius: 0.5em;
-  -o-object-fit: cover;
-     object-fit: cover;
-}
-article.big-cont .today-spec ul li .text-cont {
-  padding: 1em 1.5em;
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  font-family: sans-serif;
-  gap: 1em;
-}
-article.big-cont .today-spec ul li .text-cont p {
+article.big-cont .today-spec .swiper .swiper-button-prev,
+article.big-cont .today-spec .swiper .swiper-button-next {
+  color: rgb(218, 169, 106);
+  text-shadow: 0px 0px 5px black;
   font-weight: bold;
+}
+article.big-cont .today-spec .swiper .swiper-slide {
+  height: 360px;
+  background-color: #333;
+  border-radius: 1em;
+}
+article.big-cont .today-spec .swiper .swiper-slide .text-cont {
+  width: 100%;
+  padding: 1em;
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
+article.big-cont .today-spec .swiper .swiper-slide .text-cont .star {
+  display: flex;
+  place-content: space-between;
+}
+article.big-cont .today-spec .swiper .swiper-slide .text-cont .star a {
+  display: inline;
+  border-bottom: 2px solid rgb(218, 169, 106);
   font-family: "poppins";
-  font-size: 1.2em;
-}
-article.big-cont .today-spec ul li .text-cont i {
-  display: inline;
-}
-article.big-cont .today-spec ul li .text-cont i p {
-  display: inline;
-  margin-left: 4em;
-  font-size: 0.8rem;
-}
-article.big-cont .today-spec ul li .text-cont i:first-child {
-  margin-bottom: 1.2em;
-}
-article.big-cont .today-spec ul li i.fa-clock {
-  display: block;
-  color: var(--ac);
-}
-article.big-cont .today-spec ul li i.fa-clock p {
-  display: inline;
-  margin-left: 0.5em;
-  font-size: normal;
-}
-article.big-cont .today-spec ul li i.fa-star-half a {
-  text-wrap: nowrap;
-  cursor: pointer;
-  border-bottom: 2px solid var(--ac);
-  text-decoration: none;
-  font-family: "poppins";
-  margin-left: 3em;
+  font-weight: bold;
   color: white;
+  text-decoration: none;
 }
-article.big-cont .today-spec ul li i.fa-star-half a:hover {
-  color: var(--ac);
+article.big-cont .today-spec .swiper .swiper-slide .text-cont .star a:hover {
+  color: rgb(218, 169, 106);
   border-bottom: none;
 }
-article.big-cont .today-spec ul li.hidden {
-  display: block;
+article.big-cont .today-spec .swiper .swiper-slide .text-cont p:first-child {
+  font-size: 1.1rem;
+  font-family: "poppins";
 }
-article.big-cont .today-spec button {
-  position: absolute;
-  outline-color: white;
-  border-color: white;
+article.big-cont .today-spec .swiper .swiper-slide .text-cont i.fa-clock {
+  color: red;
 }
-article.big-cont .today-spec button.one {
-  top: 80%;
-  left: 15px;
-  height: 40px;
-  width: 40px;
-  padding: 1.2em;
-  background-color: rgb(204, 144, 66);
-  border-radius: 50%;
-  color: white;
+article.big-cont .today-spec .swiper .swiper-slide .text-cont p.t {
+  color: red;
+  font-family: "poppins";
+  display: inline;
+  margin-left: 1.5em;
+  font-size: 0.8rem;
 }
-article.big-cont .today-spec button.one i {
-  font-size: 2rem;
-  width: 10%;
-  height: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-article.big-cont .today-spec button.one:hover {
-  color: rgb(204, 144, 66);
-}
-article.big-cont .today-spec button.one:hover {
-  background-color: white;
-}
-article.big-cont .today-spec button.two {
-  top: 80%;
-  right: 20px;
-  height: 40px;
-  width: 40px;
-  padding: 1.5em;
-  background-color: rgb(204, 144, 66);
-  border-radius: 50%;
-}
-article.big-cont .today-spec button.two i {
-  font-size: 2rem;
-  width: 100%;
-  height: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  color: white;
-}
-article.big-cont .today-spec button.two i:hover {
-  color: rgb(204, 144, 66);
-}
-article.big-cont .today-spec button.two:hover {
-  background-color: white;
+article.big-cont .today-spec .swiper img {
+  border-radius: 1em;
+  -o-object-fit: cover;
+     object-fit: cover;
 }/*# sourceMappingURL=main.css.map */
