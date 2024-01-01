@@ -390,7 +390,7 @@ section.chef h1 {
 section.gallery {
   width: 100%;
   height: 100%;
-  padding: 2em 6em;
+  padding: 2em 2em;
   display: flex;
   flex-direction: column;
   gap: 1.5em;
@@ -424,18 +424,43 @@ section.gallery .swiper .swiper-slide img {
 }
 
 section.foot-head {
-  height: 80vh;
   padding: 1.5em;
   background-color: #0e0d0d;
 }
 section.foot-head ul {
-  display: grid;
-  gap: 1em;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2em;
+  flex-flow: row wrap;
   width: 100%;
-  grid-template-columns: repeat(2, 1fr);
 }
 section.foot-head ul li {
   list-style-type: none;
+  position: relative;
+}
+section.foot-head ul li:nth-child(2) i {
+  background-color: steelblue;
+  color: white;
+  border-radius: 8px;
+  margin-right: 0.5em;
+}
+section.foot-head ul li:nth-child(3) i {
+  background-color: white;
+  color: purple;
+  border-radius: 3px;
+  margin-right: 0.5em;
+}
+section.foot-head ul li:nth-child(4) i {
+  background-color: steelblue;
+  color: white;
+  border-radius: 2px;
+  margin-right: 0.5em;
+}
+section.foot-head ul li:first-child {
+  font-weight: bold;
+}
+section.foot-head ul li:first-child span {
+  color: var(--ac);
 }
 section.foot-head ul li form {
   display: flex;
@@ -443,12 +468,16 @@ section.foot-head ul li form {
 section.foot-head ul li input {
   padding: 0.5em;
   display: block;
+  border: 1px solid white;
+  box-shadow: 0px 0px 1px 2px white;
+  font-family: "poppins";
+  width: 100%;
 }
 section.foot-head ul li button {
   padding: 0.5em;
   display: inline;
   background-color: rgb(218, 147, 56);
-  border: 1px solid var(--ac);
+  box-shadow: 0px 0px 1px 2px white;
   outline-color: none;
 }
 section.foot-head a {
@@ -456,4 +485,16 @@ section.foot-head a {
   text-decoration: none;
   font-family: "poppins";
   font-size: 1rem;
+}
+
+section.foot-bottom {
+  color: white;
+  padding: 0.5em;
+  background-color: rgb(218, 147, 56);
+}
+section.foot-bottom .container {
+  font-weight: bold;
+  font-size: 1.2em;
+  text-align: center;
+  text-shadow: 0px 0px 1px white;
 }/*# sourceMappingURL=main.css.map */
