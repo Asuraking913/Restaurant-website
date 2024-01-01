@@ -385,4 +385,75 @@ section.chef h1 {
   font-family: "poppins";
   color: var(--ac);
   margin: 0.5em;
+}
+
+section.gallery {
+  width: 100%;
+  height: 100%;
+  padding: 2em 6em;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5em;
+}
+section.gallery h1 {
+  font-family: "poppins";
+  text-transform: capitalize;
+  color: var(--ac);
+  font-size: 2rem;
+  text-align: center;
+}
+section.gallery p {
+  text-align: center;
+  color: white;
+  font-family: sans-serif;
+}
+section.gallery .swiper {
+  width: 100%;
+  height: 100%;
+}
+section.gallery .swiper .swiper-slide {
+  background-size: cover;
+  border-radius: 1.5em;
+}
+section.gallery .swiper .swiper-slide img {
+  border-radius: 1.5em;
+  width: 100%;
+  height: 400px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+section.foot-head {
+  height: 80vh;
+  padding: 1.5em;
+  background-color: #0e0d0d;
+}
+section.foot-head ul {
+  display: grid;
+  gap: 1em;
+  width: 100%;
+  grid-template-columns: repeat(2, 1fr);
+}
+section.foot-head ul li {
+  list-style-type: none;
+}
+section.foot-head ul li form {
+  display: flex;
+}
+section.foot-head ul li input {
+  padding: 0.5em;
+  display: block;
+}
+section.foot-head ul li button {
+  padding: 0.5em;
+  display: inline;
+  background-color: rgb(218, 147, 56);
+  border: 1px solid var(--ac);
+  outline-color: none;
+}
+section.foot-head a {
+  color: white;
+  text-decoration: none;
+  font-family: "poppins";
+  font-size: 1rem;
 }/*# sourceMappingURL=main.css.map */
