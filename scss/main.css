@@ -13,7 +13,7 @@
 :root {
   --color: white;
   --ac: rgb(218, 169, 106);
-  --bg: black;
+  --bg: #222;
 }
 
 body {
@@ -33,12 +33,14 @@ html {
   background-color: rgba(204, 144, 66, 0.226);
   display: flex;
   justify-content: center;
+  z-index: 2;
   padding: 1.5em;
 }
 .nav-cont1 .nav-cont2 {
   display: flex;
   align-items: center;
   place-content: space-between;
+  z-index: 2;
   width: 100%;
 }
 .nav-cont1 .nav-cont2 a {
@@ -46,12 +48,13 @@ html {
   font-weight: bold;
   color: var(--color);
   font-size: 1.2rem;
-  z-index: 1;
+  z-index: 2;
 }
 .nav-cont1 .nav-cont2 i {
   font-size: 1.5rem;
   color: var(--color);
-  z-index: 1;
+  z-index: 2;
+  z-index: 2;
   cursor: pointer;
 }
 .nav-cont1 .nav-cont2 nav {
@@ -252,9 +255,10 @@ article.big-cont .today-spec .swiper img {
 }
 
 section.discover {
-  display: none;
+  display: block;
   color: white;
   text-align: center;
+  height: 50vh;
 }
 section.discover .cont1 {
   display: flex;
@@ -276,7 +280,7 @@ section.discover h1 span {
 
 section.comments {
   background-image: url("../images/buisness.jpeg");
-  height: 70vh;
+  height: 80vh;
   width: 100%;
   background-size: cover;
   margin-bottom: 2em;
@@ -284,9 +288,10 @@ section.comments {
 section.comments h1 {
   text-align: center;
   margin-top: 1.5em;
-  color: rgb(218, 169, 106);
+  color: white;
   text-transform: capitalize;
-  text-shadow: 1px 1px 1px black;
+  text-shadow: 0px 0px 1px rgb(218, 169, 106);
+  font-family: "poppins";
 }
 section.comments .container {
   height: 100%;
@@ -328,4 +333,35 @@ section.comments .container .swiper .comment img {
   -o-object-fit: cover;
      object-fit: cover;
   border-radius: 50%;
+}
+
+section.chef {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+section.chef .cont {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5em;
+  font-family: "roboto";
+  color: white;
+  text-transform: capitalize;
+  text-align: center;
+}
+section.chef .cont img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 2em;
+}
+section.chef .cont h3 {
+  font-weight: bold;
+  font-family: "roboto";
+}
+section.chef h1 {
+  font-size: 2rem;
+  text-transform: capitalize;
+  font-family: "poppins";
+  color: var(--ac);
+  margin: 0.5em;
 }/*# sourceMappingURL=main.css.map */
