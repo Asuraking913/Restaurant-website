@@ -66,7 +66,53 @@ html {
     }
 
     nav {
-      display: none;
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: 100%;
+      display: flex;
+      justify-content: flex-end;
+      background-color: rgba(0, 0, 0, 0.301);
+      height: 100vh;
+
+      ul {
+        background-color: var(--ac);
+        height: 60vh;
+        width: 50%;
+        padding: 1em;
+        display: flex;
+        flex-direction: column;
+        gap: 2em;
+        transition: 2s;
+
+        i {
+          position: absolute;
+          right: 5%;
+          font-size: 2rem;
+        }
+
+        animation-name: slide;
+        animation-duration: 2s;
+
+        @keyframes slide {
+          0% {
+            transform: translateX(100%);
+          }
+        }
+
+        li {
+          list-style-type: none;
+
+          a {
+            font-family: "poppins";
+            text-shadow: 1px 1px 2px black;
+
+            &:hover {
+              text-shadow: 1px 1px 2px rgb(107, 104, 104);
+            }
+          }
+        }
+      }
     }
   }
 }
@@ -503,18 +549,18 @@ section.foot-head {
 
       &:nth-child(2) {
         i {
-          background-color: steelblue;
-          color: white;
-          border-radius: 8px;
+          // background-color: steelblue;
+          color: steelblue;
+          // border-radius: 8px;
           margin-right: 0.5em;
         }
       }
 
       &:nth-child(3) {
         i {
-          background-color: white;
-          color: purple;
-          border-radius: 3px;
+          // background-color: white;
+          color: white;
+          // border-radius: 3px;
           margin-right: 0.5em;
         }
       }
