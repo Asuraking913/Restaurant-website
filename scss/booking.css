@@ -1,1 +1,185 @@
-/*# sourceMappingURL=booking.css.map */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --color: white;
+  --ac: rgb(218, 169, 106);
+}
+
+@font-face {
+  font-family: mon;
+  src: url("../font/Montserrat/Montserrat-Regular.ttf");
+}
+@font-face {
+  font-family: roboto;
+  src: url("../font/Roboto/Roboto-Regular.ttf");
+}
+@font-face {
+  font-family: poppins;
+  src: url("../font/Poppins/Poppins-Regular.ttf");
+}
+body {
+  background-color: #222;
+  color: white;
+}
+
+.nav-cont1 {
+  width: 100%;
+  height: 50px;
+  background-color: rgba(204, 144, 66, 0.226);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+}
+.nav-cont1 .nav-cont2 {
+  width: 100%;
+  display: flex;
+  place-content: space-between;
+  padding: 1em;
+}
+.nav-cont1 .nav-cont2 a {
+  text-decoration: none;
+  font-weight: bold;
+  color: var(--color);
+  font-size: 1.2rem;
+  z-index: 2;
+}
+.nav-cont1 .nav-cont2 i {
+  font-size: 1.5rem;
+  color: var(--color);
+  z-index: 2;
+  z-index: 2;
+  cursor: pointer;
+}
+.nav-cont1 nav {
+  display: none;
+}
+
+section.land-sect {
+  height: 100vh;
+  background-image: url(../images/Restaurant\ aesthetic.jpeg);
+  background-size: cover;
+  background-position: right;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding: 0em 1.5em;
+}
+section.land-sect .text-cont {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100%;
+  gap: 1em;
+}
+section.land-sect .text-cont h1 {
+  font-family: poppins;
+  font-size: 3rem;
+  font-weight: normal;
+  text-transform: uppercase;
+  color: white;
+  text-shadow: 1px 1px 0px black;
+}
+section.land-sect .text-cont h3 {
+  color: white;
+  font-size: 1.1em;
+  font-family: "Times New Roman", Times, serif;
+  text-align: center;
+  line-height: 1em;
+  font-style: italic;
+  font-weight: normal;
+}
+section.land-sect .text-cont p {
+  text-align: right;
+  width: 100%;
+  color: var(--ac);
+  font-family: roboto;
+  text-shadow: 0px 0px 2px white;
+}
+section.land-sect .text-cont i {
+  color: var(--ac);
+  font-size: 5rem;
+  margin-top: 0.5em;
+}
+
+section.booking-sect {
+  background-color: #222;
+  padding: 2em;
+}
+section.booking-sect .container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 1em;
+}
+section.booking-sect .container form {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
+section.booking-sect .container h4 {
+  text-align: center;
+  color: var(--ac);
+  font-family: poppins;
+  width: 80%;
+}
+section.booking-sect .container p.descp {
+  text-align: center;
+}
+section.booking-sect .input-cont {
+  background-color: black;
+  border: 1.5px solid var(--ac);
+  padding: 1em;
+  width: 100%;
+  border-radius: 1em;
+}
+section.booking-sect .input-cont input {
+  width: 100%;
+  border: 1.5px solid var(--ac);
+  height: 30px;
+  background-color: black;
+  color: white;
+  font-family: poppins;
+  border-radius: 4px;
+}
+section.booking-sect .input-cont label {
+  text-transform: uppercase;
+}
+section.booking-sect .input-cont label i {
+  font-size: 0.4rem;
+  margin-left: 0.5em;
+  color: red;
+}
+section.booking-sect .input-cont .cont1 p,
+section.booking-sect .input-cont .cont2 p {
+  display: flex;
+  place-content: space-between;
+  text-transform: uppercase;
+  font-size: 0.8rem;
+  font-family: sans-serif;
+}
+section.booking-sect .input-cont .cont1 p:nth-child(2),
+section.booking-sect .input-cont .cont2 p:nth-child(2) {
+  gap: 0.2rem;
+}
+section.booking-sect .input-cont .cont1 p input,
+section.booking-sect .input-cont .cont2 p input {
+  width: 50%;
+  height: 30px;
+}
+section.booking-sect .input-cont button {
+  height: 40px;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  background-color: var(--ac);
+  font-family: poppins;
+}
+section.booking-sect .input-cont button:hover {
+  background-color: rgb(221, 180, 125);
+}/*# sourceMappingURL=booking.css.map */

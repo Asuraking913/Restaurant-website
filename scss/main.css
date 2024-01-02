@@ -54,7 +54,6 @@ html {
   font-size: 1.5rem;
   color: var(--color);
   z-index: 2;
-  z-index: 2;
   cursor: pointer;
 }
 .nav-cont1 .nav-cont2 nav {

@@ -16,17 +16,19 @@
           <a href="#" class="logo">Chefgods</a>
           <i class="fa-solid fa-bars"></i>
 
-          <ul id="nav-list">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="#">Menu</a></li>
-            <li><a href="#">Booking</a></li>
-            <li><a href="index.html#galleryid">Gallery</a></li>
-            <li>
-              <a href="mailto:israelshedrack913@gmail.com">Contact Us</a>
-            </li>
-            <i class="fa-solid fa-times"></i>
-            <hr />
-          </ul>
+          <nav>
+            <ul id="nav-list">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="#">Menu</a></li>
+              <li><a href="#">Booking</a></li>
+              <li><a href="index.html#galleryid">Gallery</a></li>
+              <li>
+                <a href="mailto:israelshedrack913@gmail.com">Contact Us</a>
+              </li>
+              <i class="fa-solid fa-times"></i>
+              <hr />
+            </ul>
+          </nav>
         </div>
       </div>
     </header>
@@ -34,21 +36,89 @@
       <div class="text-cont">
         <h1>Booking</h1>
         <h3>
-          Booking with us is easy! Simply explore our menu, choose your
-          preferred date and time, and let us take care of the rest. Our team of
-          skilled chefs and warm hospitality staff is dedicated to ensuring that
-          your visit is nothing short of extraordinary.
+          Booking with us is easy! choose your preferred date and time, and let
+          us take care of the rest.
         </h3>
-        <p>Bon appétit!p</p>
+        <p>Bon appétit!!</p>
+        <i class="fa-solid fa-chevron-down"></i>
       </div>
     </section>
 
     <section class="booking-sect">
-      <h2>
-        In order to secure your reservation we kindly request a deposit of 200
-        euros
-      </h2>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+      <div class="container">
+        <h4>
+          In order to secure your reservation we kindly request a deposit of 200
+          euros
+        </h4>
+        <p class="descp">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        </p>
+
+        <div class="input-cont">
+          <form action="">
+            <div class="cont1">
+              <p>
+                <label for="name"
+                  >name <i class="fa-solid fa-asterisk"></i
+                ></label>
+                <label for="surname"
+                  >surname<i class="fa-solid fa-asterisk"></i
+                ></label>
+              </p>
+              <p>
+                <input type="text" id="name" placeholder="Israel" />
+                <input type="text" id="surname" placeholder="shedrack" />
+              </p>
+            </div>
+            <p>
+              <label for="phone"
+                >phone<i class="fa-solid fa-asterisk"></i
+              ></label>
+              <input
+                type="number"
+                name="phone"
+                id="phone"
+                placeholder="09035165510" />
+            </p>
+            <p>
+              <label for="email"
+                >email<i class="fa-solid fa-asterisk"></i
+              ></label>
+              <input
+                type="email"
+                name="email"
+                id="email"
+                placeholder="asuraking913@gmail.com" />
+            </p>
+            <p>
+              <label for="guests"
+                >guests<i class="fa-solid fa-asterisk"></i
+              ></label>
+              <input
+                type="text"
+                id="guests"
+                placeholder="other people?"
+                title="if you have more than two guests, demarcate with spacing" />
+            </p>
+            <div class="cont2">
+              <p>
+                <label for="time"
+                  >time<i class="fa-solid fa-asterisk"></i
+                ></label>
+                <label for="date"
+                  >date<i class="fa-solid fa-asterisk"></i
+                ></label>
+              </p>
+              <p>
+                <input type="date" name="date" id="date" />
+                <input type="text" name="time" id="time" />
+              </p>
+            </div>
+            <button type="submit">book now</button>
+          </form>
+        </div>
+        <p>thank you for choosing us!!</p>
+      </div>
     </section>
   </body>
 </html>
