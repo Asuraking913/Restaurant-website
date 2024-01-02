@@ -62,7 +62,7 @@ html {
   top: 0;
   right: 0;
   width: 100%;
-  display: none;
+  display: flex;
   justify-content: flex-end;
   background-color: rgba(0, 0, 0, 0.301);
   height: 100vh;
@@ -476,6 +476,10 @@ section.foot-head ul {
 section.foot-head ul li {
   list-style-type: none;
   position: relative;
+}
+section.foot-head ul li:nth-child(8) i {
+  color: white;
+  margin-right: 0.3em;
 }
 section.foot-head ul li:nth-child(2) i {
   color: steelblue;
