@@ -114,6 +114,8 @@ html {
           a {
             font-family: "poppins";
             text-shadow: 1px 1px 2px black;
+            transition: 0.5s;
+            text-decoration: none;
 
             &:hover {
               text-shadow: 1px 1px 2px rgb(107, 104, 104);
@@ -197,7 +199,7 @@ section.land-sect {
 
       animation-name: slide-down;
       animation-duration: 1s;
-      animation-iteration-count: 20;
+      animation-iteration-count: infinite;
 
       @keyframes slide-down {
         0% {

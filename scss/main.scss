@@ -10,9 +10,11 @@
 
   font-family: "poppins";
   src: url("../font/Poppins/Poppins-Regular.ttf");
+}
 
-  // font-family: "mon";
-  // src: url("../font/Montserrat/Montserrat-Regular.ttf");
+@font-face {
+  font-family: lit;
+  src: url("../font/liltia/LilitaOne-Regular.ttf");
 }
 
 :root {
@@ -53,7 +55,8 @@ html {
       text-decoration: none;
       font-weight: bold;
       color: var(--color);
-      font-size: 1.2rem;
+      font-size: 1.5rem;
+      font-family: lit;
       z-index: 2;
     }
 
@@ -135,22 +138,26 @@ section.land-sect {
 
     h1 {
       color: white;
-      font-family: sans-serif;
+      font-family: poppins;
       font-size: 1.8rem;
       text-transform: capitalize;
     }
 
     p {
       color: white;
-      font-size: 1.1em;
+      font-size: 1rem;
       font-family: "roboto";
       line-height: 1em;
       font-style: italic;
     }
 
+    div {
+      margin-top: 2em;
+    }
+
     a {
       margin-top: 2em;
-      padding: 1em;
+      padding: 1em 2em;
       color: rgb(22, 22, 22);
       text-decoration: none;
       font-size: 1.2em;
@@ -158,9 +165,10 @@ section.land-sect {
       font-weight: bold;
       background-color: var(--ac);
       border-radius: 0.8em;
+      transition: 1s;
 
       &:hover {
-        background-color: rgb(209, 178, 137);
+        background-color: rgb(204, 184, 158);
       }
     }
   }
@@ -272,23 +280,34 @@ article.big-cont {
     }
 
     .swiper {
-      width: 70%;
+      width: 63%;
+      border-radius: 1em;
 
       .swiper-button-prev,
       .swiper-button-next {
         color: rgb(218, 169, 106);
-        text-shadow: 0px 0px 5px black;
+        text-shadow: 0px 0px 4px black;
         font-weight: bold;
+
+        &:hover {
+          color: white;
+          text-shadow: 0px 0px 4px rgb(218, 147, 56);
+        }
       }
 
       .swiper-slide {
         height: 360px;
         background-color: #333;
         border-radius: 1em;
+        // width: 40%;
+
+        // .swiper-wrapper {
+        //   width: 40%;
+        // }
 
         .text-cont {
           width: 100%;
-          padding: 1em;
+          padding: 0.5em;
           display: flex;
           flex-direction: column;
           gap: 1em;
@@ -629,5 +648,88 @@ section.foot-bottom {
     font-size: 1.2em;
     text-align: center;
     text-shadow: 0px 0px 1px white;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .nav-cont1 {
+    height: 70px;
+    align-items: flex-start;
+    padding-left: 4em;
+
+    .nav-cont2 {
+      display: flex;
+      justify-content: flex-end;
+
+      a.logo {
+        font-size: 1.6rem;
+      }
+
+      i.fa-bars {
+        display: none;
+      }
+
+      nav {
+        display: flex;
+        position: static;
+        height: auto;
+        // height: 50px;
+        // background-color: white;
+        background-color: transparent;
+
+        ul {
+          // background-color: rgba(204, 144, 66, 0.226);
+          flex-direction: row;
+          height: 50px;
+          padding: 0em;
+          align-items: center;
+          background-color: transparent;
+          gap: 3em;
+
+          a {
+            font-size: 1.2rem;
+
+            &:hover {
+              border-bottom: 2px solid var(--ac);
+              color: var(--ac);
+              text-shadow: 1px 1px 2px black;
+            }
+          }
+
+          hr {
+            display: none;
+          }
+
+          i {
+            display: none;
+          }
+        }
+      }
+    }
+  }
+
+  section.land-sect {
+    .cont {
+      width: 60%;
+
+      h1 {
+        font-size: 3rem;
+      }
+
+      p {
+        font-size: 1.4em;
+        width: 100%;
+
+        text-align: center;
+      }
+
+      div {
+        margin-top: 2em;
+
+        a {
+          padding: 1em 2em;
+        }
+      }
+    }
   }
 }

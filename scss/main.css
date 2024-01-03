@@ -10,6 +10,10 @@
   font-family: "poppins";
   src: url("../font/Poppins/Poppins-Regular.ttf");
 }
+@font-face {
+  font-family: lit;
+  src: url("../font/liltia/LilitaOne-Regular.ttf");
+}
 :root {
   --color: white;
   --ac: rgb(218, 169, 106);
@@ -47,7 +51,8 @@ html {
   text-decoration: none;
   font-weight: bold;
   color: var(--color);
-  font-size: 1.2rem;
+  font-size: 1.5rem;
+  font-family: lit;
   z-index: 2;
 }
 .nav-cont1 .nav-cont2 i {
@@ -118,20 +123,23 @@ section.land-sect .cont {
 }
 section.land-sect .cont h1 {
   color: white;
-  font-family: sans-serif;
+  font-family: poppins;
   font-size: 1.8rem;
   text-transform: capitalize;
 }
 section.land-sect .cont p {
   color: white;
-  font-size: 1.1em;
+  font-size: 1rem;
   font-family: "roboto";
   line-height: 1em;
   font-style: italic;
 }
+section.land-sect .cont div {
+  margin-top: 2em;
+}
 section.land-sect .cont a {
   margin-top: 2em;
-  padding: 1em;
+  padding: 1em 2em;
   color: rgb(22, 22, 22);
   text-decoration: none;
   font-size: 1.2em;
@@ -139,9 +147,10 @@ section.land-sect .cont a {
   font-weight: bold;
   background-color: var(--ac);
   border-radius: 0.8em;
+  transition: 1s;
 }
 section.land-sect .cont a:hover {
-  background-color: rgb(209, 178, 137);
+  background-color: rgb(204, 184, 158);
 }
 
 article.big-cont {
@@ -235,13 +244,19 @@ article.big-cont .today-spec h3 span {
   font-size: 1rem;
 }
 article.big-cont .today-spec .swiper {
-  width: 70%;
+  width: 63%;
+  border-radius: 1em;
 }
 article.big-cont .today-spec .swiper .swiper-button-prev,
 article.big-cont .today-spec .swiper .swiper-button-next {
   color: rgb(218, 169, 106);
-  text-shadow: 0px 0px 5px black;
+  text-shadow: 0px 0px 4px black;
   font-weight: bold;
+}
+article.big-cont .today-spec .swiper .swiper-button-prev:hover,
+article.big-cont .today-spec .swiper .swiper-button-next:hover {
+  color: white;
+  text-shadow: 0px 0px 4px rgb(218, 147, 56);
 }
 article.big-cont .today-spec .swiper .swiper-slide {
   height: 360px;
@@ -250,7 +265,7 @@ article.big-cont .today-spec .swiper .swiper-slide {
 }
 article.big-cont .today-spec .swiper .swiper-slide .text-cont {
   width: 100%;
-  padding: 1em;
+  padding: 0.5em;
   display: flex;
   flex-direction: column;
   gap: 1em;
@@ -533,4 +548,67 @@ section.foot-bottom .container {
   font-size: 1.2em;
   text-align: center;
   text-shadow: 0px 0px 1px white;
+}
+
+@media screen and (min-width: 768px) {
+  .nav-cont1 {
+    height: 70px;
+    align-items: flex-start;
+    padding-left: 4em;
+  }
+  .nav-cont1 .nav-cont2 {
+    display: flex;
+    justify-content: flex-end;
+  }
+  .nav-cont1 .nav-cont2 a.logo {
+    font-size: 1.6rem;
+  }
+  .nav-cont1 .nav-cont2 i.fa-bars {
+    display: none;
+  }
+  .nav-cont1 .nav-cont2 nav {
+    display: flex;
+    position: static;
+    height: auto;
+    background-color: transparent;
+  }
+  .nav-cont1 .nav-cont2 nav ul {
+    flex-direction: row;
+    height: 50px;
+    padding: 0em;
+    align-items: center;
+    background-color: transparent;
+    gap: 3em;
+  }
+  .nav-cont1 .nav-cont2 nav ul a {
+    font-size: 1.2rem;
+  }
+  .nav-cont1 .nav-cont2 nav ul a:hover {
+    border-bottom: 2px solid var(--ac);
+    color: var(--ac);
+    text-shadow: 1px 1px 2px black;
+  }
+  .nav-cont1 .nav-cont2 nav ul hr {
+    display: none;
+  }
+  .nav-cont1 .nav-cont2 nav ul i {
+    display: none;
+  }
+  section.land-sect .cont {
+    width: 60%;
+  }
+  section.land-sect .cont h1 {
+    font-size: 3rem;
+  }
+  section.land-sect .cont p {
+    font-size: 1.4em;
+    width: 100%;
+    text-align: center;
+  }
+  section.land-sect .cont div {
+    margin-top: 2em;
+  }
+  section.land-sect .cont div a {
+    padding: 1em 2em;
+  }
 }/*# sourceMappingURL=main.css.map */
