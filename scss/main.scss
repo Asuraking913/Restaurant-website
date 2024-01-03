@@ -108,6 +108,7 @@ html {
           a {
             font-family: "poppins";
             text-shadow: 1px 1px 2px black;
+            transition: 1s;
 
             &:hover {
               text-shadow: 1px 1px 2px rgb(107, 104, 104);
@@ -213,8 +214,7 @@ article.big-cont {
         }
       }
 
-      figure:nth-child(3),
-      figure:nth-child(4) {
+      div {
         display: none;
       }
     }
@@ -651,6 +651,18 @@ section.foot-bottom {
   }
 }
 
+// @media screen and (min-width: 540) {
+//   .big-cont {
+//     .hero-sect {
+//       .img-cont1 {
+//         div.fig {
+//           display: none;
+//         }
+//       }
+//     }
+//   }
+// }
+
 @media screen and (min-width: 768px) {
   .nav-cont1 {
     height: 70px;
@@ -728,6 +740,101 @@ section.foot-bottom {
 
         a {
           padding: 1em 2em;
+        }
+      }
+    }
+  }
+
+  article.big-cont {
+    // flex-direction: row;
+
+    section.hero-sect {
+      flex-direction: row;
+      justify-content: center;
+      padding: 4em;
+
+      .img-cont1 {
+        flex-direction: row;
+        flex-wrap: wrap;
+        width: 50%;
+
+        div {
+          display: flex;
+          gap: 2em;
+        }
+
+        figure {
+          img {
+            width: 200px;
+            height: 200px;
+            border-radius: 0;
+          }
+
+          figcaption {
+            display: none;
+          }
+        }
+
+        figure:nth-child(3),
+        figure:nth-child(4) {
+          display: block;
+        }
+      }
+
+      .story {
+        width: 50%;
+        justify-content: center;
+        line-height: 1.6rem;
+        align-items: flex-start;
+        text-align: left;
+
+        h1 {
+          font-size: 3rem;
+        }
+
+        p {
+          text-align: left;
+          font-size: 1.2em;
+        }
+      }
+    }
+
+    .today-spec {
+      height: 100vh;
+
+      h1 {
+        font-size: 3rem;
+      }
+
+      h3 {
+        font-size: 1.2em;
+      }
+
+      .swiper {
+        height: 100%;
+        // background-color: red;
+        width: 50%;
+
+        img {
+          height: 100%;
+          width: 100%;
+        }
+
+        .swiper-slide {
+          .text-cont {
+            margin-top: -2em;
+            padding: 2em 2em;
+            background-color: #222;
+            // align-items: center;
+            text-align: center;
+
+            .star {
+              gap: 2em;
+              text-align: center;
+              margin-left: auto;
+              margin-right: auto;
+            }
+          }
         }
       }
     }

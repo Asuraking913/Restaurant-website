@@ -99,6 +99,7 @@ html {
 .nav-cont1 .nav-cont2 nav ul li a {
   font-family: "poppins";
   text-shadow: 1px 1px 2px black;
+  transition: 1s;
 }
 .nav-cont1 .nav-cont2 nav ul li a:hover {
   text-shadow: 1px 1px 2px rgb(107, 104, 104);
@@ -190,8 +191,7 @@ article.big-cont section.hero-sect .img-cont1 figure img {
      object-fit: cover;
   border-radius: 2em;
 }
-article.big-cont section.hero-sect .img-cont1 figure:nth-child(3),
-article.big-cont section.hero-sect .img-cont1 figure:nth-child(4) {
+article.big-cont section.hero-sect .img-cont1 div {
   display: none;
 }
 article.big-cont section.hero-sect .story {
@@ -610,5 +610,74 @@ section.foot-bottom .container {
   }
   section.land-sect .cont div a {
     padding: 1em 2em;
+  }
+  article.big-cont section.hero-sect {
+    flex-direction: row;
+    justify-content: center;
+    padding: 4em;
+  }
+  article.big-cont section.hero-sect .img-cont1 {
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 50%;
+  }
+  article.big-cont section.hero-sect .img-cont1 div {
+    display: flex;
+    gap: 2em;
+  }
+  article.big-cont section.hero-sect .img-cont1 figure img {
+    width: 200px;
+    height: 200px;
+    border-radius: 0;
+  }
+  article.big-cont section.hero-sect .img-cont1 figure figcaption {
+    display: none;
+  }
+  article.big-cont section.hero-sect .img-cont1 figure:nth-child(3),
+  article.big-cont section.hero-sect .img-cont1 figure:nth-child(4) {
+    display: block;
+  }
+  article.big-cont section.hero-sect .story {
+    width: 50%;
+    justify-content: center;
+    line-height: 1.6rem;
+    align-items: flex-start;
+    text-align: left;
+  }
+  article.big-cont section.hero-sect .story h1 {
+    font-size: 3rem;
+  }
+  article.big-cont section.hero-sect .story p {
+    text-align: left;
+    font-size: 1.2em;
+  }
+  article.big-cont .today-spec {
+    height: 100vh;
+  }
+  article.big-cont .today-spec h1 {
+    font-size: 3rem;
+  }
+  article.big-cont .today-spec h3 {
+    font-size: 1.2em;
+  }
+  article.big-cont .today-spec .swiper {
+    height: 100%;
+    width: 50%;
+  }
+  article.big-cont .today-spec .swiper img {
+    height: 100%;
+    width: 100%;
+  }
+  article.big-cont .today-spec .swiper .swiper-slide .text-cont {
+    margin-top: -2em;
+    padding: 2em 2em;
+    background-color: #222;
+    text-align: center;
+  }
+  article.big-cont .today-spec .swiper .swiper-slide .text-cont .star {
+    gap: 2em;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
   }
 }/*# sourceMappingURL=main.css.map */
