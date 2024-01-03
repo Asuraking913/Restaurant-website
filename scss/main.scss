@@ -55,7 +55,7 @@ html {
       text-decoration: none;
       font-weight: bold;
       color: var(--color);
-      font-size: 1.5rem;
+      font-size: 1.2rem;
       font-family: lit;
       z-index: 2;
     }
@@ -426,7 +426,8 @@ section.comments {
     margin-top: 1.5em;
     color: white;
     text-transform: capitalize;
-    text-shadow: 0px 0px 1px rgb(218, 169, 106);
+    text-shadow: 1px 1px 1px black;
+    font-weight: normal;
     font-family: "poppins";
   }
 
@@ -439,6 +440,10 @@ section.comments {
     flex-direction: column;
     justify-content: center;
     gap: 1.5em;
+
+    .swiper-pagination {
+      display: none;
+    }
 
     .swiper {
       width: 70%;
@@ -512,7 +517,7 @@ section.chef {
 
 section.gallery {
   width: 100%;
-  height: 100%;
+  height: 100vh;
   padding: 2em 2em;
   display: flex;
   flex-direction: column;
@@ -599,11 +604,11 @@ section.foot-head {
         }
       }
 
-      &:first-child {
-        font-weight: bold;
-
-        span {
-          color: var(--ac);
+      a.logo {
+        &:first-child {
+          font-weight: bold;
+          font-size: 1.4em;
+          font-family: lit;
         }
       }
 
@@ -626,6 +631,8 @@ section.foot-head {
         // border: 1px solid var(--ac);
         box-shadow: 0px 0px 1px 2px white;
         outline-color: none;
+        font-family: lit;
+        color: white;
       }
     }
   }
@@ -647,7 +654,7 @@ section.foot-bottom {
     font-weight: bold;
     font-size: 1.2em;
     text-align: center;
-    text-shadow: 0px 0px 1px white;
+    text-shadow: 2px 2px 2px black;
   }
 }
 
@@ -740,6 +747,7 @@ section.foot-bottom {
 
         a {
           padding: 1em 2em;
+          transition: 2s;
         }
       }
     }
@@ -837,6 +845,134 @@ section.foot-bottom {
           }
         }
       }
+    }
+  }
+
+  section.discover {
+    display: flex;
+    justify-content: center;
+    gap: 2em;
+    align-items: center;
+
+    .cont1 {
+      width: 40%;
+
+      h1 {
+        font-size: 3rem;
+        font-weight: normal;
+      }
+
+      p {
+        font-size: 1.2em;
+      }
+    }
+
+    .cont2 {
+      background-image: url("../images/yoshina.jpeg");
+      width: 500px;
+      height: 500px;
+      background-size: cover;
+    }
+  }
+
+  section.comments {
+    margin-bottom: 0;
+    height: 100vh;
+
+    h1 {
+      font-size: 3rem;
+    }
+
+    .container {
+      height: 100%;
+
+      .comment {
+        justify-content: center;
+      }
+
+      p {
+        font-size: 1.2em;
+      }
+
+      .swiper-pagination {
+        display: block;
+      }
+
+      .swiper {
+        width: 100%;
+        background-color: rgba(0, 0, 0, 0.301);
+        height: 100%;
+
+        .comment {
+          flex-direction: row;
+          justify-content: center;
+
+          img {
+            height: 300px;
+            width: 300px;
+          }
+
+          p {
+            width: 50%;
+          }
+        }
+      }
+    }
+  }
+
+  section.chef {
+    padding: 2em;
+
+    h1 {
+      font-size: 3rem;
+    }
+
+    .cont {
+      flex-direction: row;
+      gap: 2em;
+
+      img {
+        transition: 2s;
+
+        &:hover {
+          transform: scale(115%);
+        }
+      }
+
+      h3 {
+        margin-top: 1em;
+      }
+    }
+  }
+
+  section.gallery {
+    height: 100vh;
+
+    h1 {
+      font-size: 3rem;
+    }
+
+    p {
+      font-size: 1.2em;
+    }
+
+    .swiper {
+      height: 80vh;
+    }
+  }
+
+  section.foot-head {
+    padding: 2.5em;
+
+    ul {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+    }
+  }
+
+  section.foot-bottom {
+    .container {
+      font-family: lit;
     }
   }
 }
