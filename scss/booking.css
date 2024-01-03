@@ -56,9 +56,9 @@ html {
   text-decoration: none;
   font-weight: bold;
   color: var(--color);
-  font-size: 1.6rem;
-  z-index: 2;
+  font-size: 1.2rem;
   font-family: lit;
+  z-index: 2;
 }
 .nav-cont1 .nav-cont2 i {
   font-size: 1.5rem;
@@ -84,9 +84,9 @@ html {
   display: flex;
   flex-direction: column;
   gap: 2em;
-  transition: 2s;
+  transition: 0.2s;
   animation-name: slide;
-  animation-duration: 2s;
+  animation-duration: 0.5s;
 }
 .nav-cont1 .nav-cont2 nav ul i {
   position: absolute;
@@ -104,8 +104,7 @@ html {
 .nav-cont1 .nav-cont2 nav ul li a {
   font-family: "poppins";
   text-shadow: 1px 1px 2px black;
-  transition: 0.5s;
-  text-decoration: none;
+  transition: 1s;
 }
 .nav-cont1 .nav-cont2 nav ul li a:hover {
   text-shadow: 1px 1px 2px rgb(107, 104, 104);
