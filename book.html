@@ -14,7 +14,7 @@
       <div class="nav-cont1">
         <div class="nav-cont2">
           <a href="index.html" class="logo">Chefgods</a>
-          <i class="fa-solid fa-bars"></i>
+          <i class="fa-solid fa-bars" id="menbtn"></i>
           <nav id="nav">
             <ul id="nav-list">
               <li><a href="index.html">Home</a></li>
@@ -25,7 +25,7 @@
                 <a href="mailto:israelshedrack913@gmail.com">Contact Us</a>
               </li>
 
-              <i class="fa-solid fa-times"></i>
+              <i class="fa-solid fa-times" id="exitBtn"></i>
 
               <hr />
             </ul>
@@ -152,4 +152,21 @@
       </div>
     </section>
   </body>
+  <script>
+    const nav = document.getElementById("nav");
+    const menuBtn = document.getElementById("menbtn");
+    const exitBtn = document.getElementById("exitBtn");
+
+    window.addEventListener("click", (e) => {
+      if (e.target === menuBtn) {
+        nav.style.display = "flex";
+        menuBtn.style.display = "none";
+      }
+
+      if (e.target === exitBtn || e.target === nav) {
+        nav.style.display = "none";
+        menuBtn.style.display = "block";
+      }
+    });
+  </script>
 </html>

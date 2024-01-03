@@ -13,12 +13,12 @@ const exitMenu = document.getElementById("exit");
 // });
 
 window.addEventListener("click", (e) => {
-  if (e.target == menuBtn) {
+  if (e.target === menuBtn) {
     nav.style.display = "flex";
     menuBtn.style.display = "none";
   }
 
-  if (e.target == exitMenu) {
+  if (e.target === exitMenu || e.target === nav) {
     nav.style.display = "none";
     menuBtn.style.display = "block";
   }

@@ -79,9 +79,9 @@ html {
   display: flex;
   flex-direction: column;
   gap: 2em;
-  transition: 2s;
+  transition: 0.2s;
   animation-name: slide;
-  animation-duration: 2s;
+  animation-duration: 0.5s;
 }
 .nav-cont1 .nav-cont2 nav ul i {
   position: absolute;

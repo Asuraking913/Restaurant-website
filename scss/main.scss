@@ -85,7 +85,7 @@ html {
         display: flex;
         flex-direction: column;
         gap: 2em;
-        transition: 2s;
+        transition: 0.2s;
 
         i {
           position: absolute;
@@ -94,7 +94,7 @@ html {
         }
 
         animation-name: slide;
-        animation-duration: 2s;
+        animation-duration: 0.5s;
 
         @keyframes slide {
           0% {
